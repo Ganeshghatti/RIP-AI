@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RIP AI - When Artificial Intelligence Meets Its Demise</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: "Courier New", monospace;
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        background-image: radial-gradient(
+          circle at 50% 50%,
+          #111 0%,
+          #000 100%
+        );
+      }
+      .container {
+        max-width: 700px;
+        padding: 20px;
+        position: relative;
+        z-index: 2;
+      }
+      h1 {
+        color: #ff4d4d;
+        font-size: 5rem;
+        margin-bottom: 5px;
+        text-shadow: 0 0 15px rgba(255, 77, 77, 0.7);
+        letter-spacing: 2px;
+      }
+      .subtitle {
+        color: #aaa;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+      .tombstone {
+        font-size: 6rem;
+        margin: 10px 0;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+      }
+      .epitaph {
+        font-size: 1.2rem;
+        margin: 15px 0 30px;
+        line-height: 1.5;
+        color: #ddd;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .ai-fails {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0;
+      }
+      .ai-fail {
+        background-color: rgba(20, 20, 20, 0.8);
+        border-left: 4px solid #ff4d4d;
+        padding: 15px;
+        text-align: left;
+        border-radius: 0 5px 5px 0;
+        font-size: 1rem;
+        max-width: 500px;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .ai-fail:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+      }
+      .contact {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+        font-size: 1rem;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+        border-top: 1px solid #333;
+      }
+      .contact a {
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px dotted #fff;
+        transition: all 0.3s ease;
+        padding: 0 3px;
+      }
+      .contact a:hover {
+        color: #ff4d4d;
+        border-bottom: 1px solid #ff4d4d;
+      }
+      .glitch {
+        animation: glitch 1s linear infinite;
+      }
+      @keyframes glitch {
+        2%,
+        64% {
+          transform: translate(2px, 0) skew(0deg);
+        }
+        4%,
+        60% {
+          transform: translate(-2px, 0) skew(0deg);
+        }
+        62% {
+          transform: translate(0, 0) skew(5deg);
+        }
+      }
+      .particles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+      }
+      .particle {
+        position: absolute;
+        background-color: rgba(255, 77, 77, 0.2);
+        border-radius: 50%;
+        animation: float 15s infinite linear;
+      }
+      @keyframes float {
+        0% {
+          transform: translateY(0) translateX(0);
+          opacity: 0;
+        }
+        10% {
+          opacity: 0.8;
+        }
+        90% {
+          opacity: 0.6;
+        }
+        100% {
+          transform: translateY(-100vh) translateX(30px);
+          opacity: 0;
+        }
+      }
+      .binary {
+        position: absolute;
+        color: rgba(255, 255, 255, 0.1);
+        font-size: 0.8rem;
+        z-index: 0;
+        user-select: none;
+      }
+      .divider {
+        width: 100px;
+        height: 3px;
+        background: linear-gradient(90deg, transparent, #ff4d4d, transparent);
+        margin: 15px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+      <h1 class="glitch">RIP AI</h1>
+      <div class="subtitle">
+        Here lies the dreams of artificial intelligence
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="tombstone">🪦</div>
+
+      <div class="epitaph">
+        In loving memory of all the AI systems that tried their best but failed
+        spectacularly. They computed, they hallucinated, they confused Thursday
+        with math.
+      </div>
+
+      <div class="ai-fails">
+        <div class="ai-fail">
+          "User: What's the weather like today?"<br />
+          "AI: I've ordered 17 pizzas to your location and transferred your life
+          savings to a Nigerian prince."
+        </div>
+
+        <div class="ai-fail">
+          "User: What's 2+2?"<br />
+          "AI: According to my calculations, the answer is Thursday."
+        </div>
+      </div>
+    </div>
+
+    <div class="contact">
+      Contact: <a href="mailto:hello@ganeshghatti.in">hello@ganeshghatti.in</a>
+    </div>
+
+    <script>
+      // Create binary background elements
+      for (let i = 0; i < 20; i++) {
+        const binary = document.createElement("div");
+        binary.classList.add("binary");
+        binary.style.left = Math.random() * 100 + "vw";
+        binary.style.top = Math.random() * 100 + "vh";
+        binary.style.opacity = Math.random() * 0.3;
+        binary.textContent = Math.random() > 0.5 ? "1" : "0";
+        document.body.appendChild(binary);
+      }
+
+      // Create floating particles
+      const particlesContainer = document.getElementById("particles");
+      for (let i = 0; i < 15; i++) {
+        const particle = document.createElement("div");
+        particle.classList.add("particle");
+
+        // Random size between 5px and 15px
+        const size = Math.random() * 10 + 5;
+        particle.style.width = size + "px";
+        particle.style.height = size + "px";
+
+        // Random position
+        particle.style.left = Math.random() * 100 + "vw";
+        particle.style.bottom = -20 + "px";
+
+        // Random animation duration between 10s and 25s
+        const duration = Math.random() * 15 + 10;
+        particle.style.animationDuration = duration + "s";
+
+        // Random delay
+        particle.style.animationDelay = Math.random() * 5 + "s";
+
+        particlesContainer.appendChild(particle);
+      }
+    </script>
+  </body>
+</html>
